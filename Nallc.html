@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niatorious Anesthesia LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0F172A;
+      color: #F8FAFC;
+    }
+    header {
+      background-color: #1E293B;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #1E293B;
+      padding: 10px 0;
+      border-bottom: 1px solid #334155;
+    }
+    nav a {
+      color: #F8FAFC;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #1E3A8A, #2563EB);
+    }
+    .hero img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #93C5FD;
+    }
+    .services, .speaking {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #1E293B;
+      border: 1px solid #334155;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1E293B;
+      font-size: 0.9rem;
+      color: #94A3B8;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #2563EB;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Niatorious Anesthesia LLC</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <img src="logo.png" alt="Niatorious Anesthesia Logo" />
+    <h2>Passionate. Vigilant. Dedicated.</h2>
+    <p>Providing elite anesthesiology staffing solutions for hospitals, clinics, and surgical centers.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About Us</h3>
+    <p>Niatorious Anesthesia LLC is dedicated to providing temporary and permanent placement of certified anesthesia providers, including Certified Anesthesiologist Assistants (CAAs) and Certified Registered Nurse Anesthetists (CRNAs). Our mission is rooted in excellence, representation, and trust, empowering healthcare institutions with the best possible anesthesia talent.</p>
+  </section>
+
+  <section class="section">
+    <h3>Meet Our Founder</h3>
+    <div class="card">
+      <h4>Keandre Butts, CAA – Founder & Lead Anesthetist</h4>
+      <p>Keandre graduated from Emory University in 2020. With a passion for excellence in patient care and representation in the field of anesthesia, Keandre founded Niatorious Anesthesia LLC to bridge healthcare staffing gaps while inspiring the next generation of providers.</p>
+      <p><em>“Excellence is the expectation. Extraordinary is the goal.”</em></p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Temporary Staffing</h4>
+        <p>Rapid, short-term anesthesia provider placement for operating rooms and procedural care.</p>
+      </div>
+      <div class="card">
+        <h4>Permanent Placement</h4>
+        <p>Long-term provider recruitment for hospitals and surgical centers seeking stability and skill.</p>
+      </div>
+      <div class="card">
+        <h4>Certified Providers</h4>
+        <p>All of our professionals are licensed CRNAs or CAAs with verified clinical excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="speaking" class="section">
+    <h3>Speaking Engagements</h3>
+    <div class="speaking">
+      <div class="card">
+        <h4>Career Days</h4>
+        <p>We speak at colleges, high schools, and middle schools to inspire the next generation of anesthesia providers.</p>
+      </div>
+      <div class="card">
+        <h4>Healthcare Panels</h4>
+        <p>Invite us to share expert insights and diverse representation in anesthesia care and staffing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact Us</h3>
+    <p>📍 Location: Atlanta, GA</p>
+    <p>✉️ Email: <a href="mailto:niatoriousanesthesia@gmail.com" style="color: #60A5FA;">niatoriousanesthesia@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <select required>
+        <option value="">Inquiry Type</option>
+        <option>Staffing Request</option>
+        <option>Speaking Engagement</option>
+        <option>General Inquiry</option>
+      </select>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Niatorious Anesthesia LLC. All rights reserved.
+  </footer>
+
+</body>
+</html>
